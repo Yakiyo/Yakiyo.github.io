@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    /* Make body a flex container so that <main> can be centered */
+    display: flex;
+    /* center <main> */
+    justify-content: center;
+    color: ghostwhite;
+    font-size: 15px;
+}
+
+p {
+    color: ghostwhite;
+}
+
+main {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 2%;
+    min-width: 90%;
+    max-width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+main>div {
+    margin: 2%;
+    padding: 2%;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+.avatar>img {
+    border-radius: 100%;
+    width: 80%;
+    margin: 5%;
+}
+
+.icons {
+    display: flex;
+    flex-flow: row;
+    margin: 2px;
+    margin-left: 10px;
+}
+
+.icons img {
+    border-radius: 100px;
+    height: 30px;
+    padding: 5px;
+}
+
+#header {
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#file-name {
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+
+#welcome {
+    color: #1f1f25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .avatar {
+        display: none;
+    }
+  }
