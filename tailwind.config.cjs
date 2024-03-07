@@ -1,4 +1,4 @@
-const daisyui = require("daisyui");
+// const daisyui = require("daisyui");
 
 /** @type {import('tailwindcss').Config}*/
 const config = {
@@ -8,10 +8,10 @@ const config = {
     extend: {},
   },
 
-  plugins: [daisyui],
-  daisyui: {
-    themes: ["dracula", "cupcake"],
-  }
+  // plugins: [daisyui],
+  // daisyui: {
+  //   themes: ["dracula", "cupcake"],
+  // }
 };
 
 module.exports = config;
