@@ -1,5 +1,5 @@
 <script lang="ts">
-  import discord from '../assets/discord.svg';
+  import discord from "../assets/discord.svg";
   let avatar = discord;
   let online = false;
 </script>
