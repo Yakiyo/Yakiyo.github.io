@@ -1,61 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
     <title>Yakiyo's Takoyaki</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name='title' content="Yakiyo's Takoyaki" />
-    <meta name='description' content='Yakiyo. 18 y/o kid. Weeb and hobbyist Developer' />
-    <meta name='theme-color' content='#3db4f2' />
-    <meta property='twitter:title' content="Yakiyo's Takoyaki" />
-    <meta property='twitter:description' content='Yakiyo. 18 y/o kid. Weeb and hobbyist Developer' />
-    <meta property='twitter:image' content='https://yakiyo.github.io/assets/favicon.png' />
-    <link rel='icon' type='image/jpg' href='./assets/favicon.png' />
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 
 <body>
-    <main>
-        <!-- Split main into two items, the items are arranged in a row.
-        The left item contains the text stuff, while the right contains the avatar -->
-        <div class="desc">
-            <p><span id="file-name">Yakiyo/readme.md</span></p>
-            <p id="welcome">Welcome to my portfolio</p>
-            <h1>Hey, I’m <span id="header">Yakiyo</span></h1>
-            <p id="me">
-                I'm an 18 yr old student currently in my last year of highschool.
-                I live in Bangladesh. I'm self taught. Aspiring to become a Software Developer.
+    <header>
+        <a href="#" class="logo">Yakiyo</a>
+        <!-- <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
+        </nav> -->
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="logo">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Yakiyo</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Im a self taught developer, currently a CSE student in IUT, Bangladesh.
             </p>
-            <div>
-                <b>Hobbies</b>
-                <ul>
-                    <li>Watching Animes</li>
-                    <li>Reading Light Novels and Mangas</li>
-                    <li>Occassional coding</li>
-                    <li>Reading books</li>
-                    <li>Eating good food :)</li>
-                </ul>
+            <div class="social-icons">
+                <a href="https://github.com/Yakiyo"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.bio/yakiyo"><i class="fa-brands fa-discord"></i></a>
             </div>
-            <div class="socials">
-                <h3>Socials & Links</h3>
-                <div class="icons">
-                    <!-- <a href="https://twitter.com/Yakiyo8" target="_blank"><img src="./assets/twitter.png"
-                            alt="twitter-icon"></a> -->
-                    <a href="https://github.com/Yakiyo" target="_blank"><img src="./assets/github.png"
-                            alt="github-logo"></a>
-                    <a href="https://anilist.co/user/763771" target="_blank"><img
-                            src="https://anilist.co/img/icons/icon.svg" alt="anilist-icon"></a>
-                    <a href="https://discord.bio/Yakiyo" target="_blank"><img src="./assets/discord.png"
-                            alt="discord-icon"></a>
-                </div>
-            </div>
+            <!-- <a href="#" class="btn">Hire me</a> -->
         </div>
-        <div class="avatar centered">
-            <img src="assets/avatar.jpg" alt="avatar">
-        </div>
-    </main>
+    </section>
 </body>
 
 </html>
