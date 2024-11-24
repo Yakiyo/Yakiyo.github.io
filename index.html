@@ -4,50 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
-    <title>Yakiyo's Takoyaki</title>
+    <title>Yakiyo</title>
 
-    <meta name='title' content="Yakiyo's Takoyaki" />
-    <meta name='description' content='Yakiyo. 18 y/o kid. Weeb and hobbyist Developer' />
+    <!-- Use this during dev, should be commented during prod -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use this during prod, should be commented during dev -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <meta name='title' content="Yakiyo" />
+    <meta name='description' content='Student/Developer' />
     <meta name='theme-color' content='#5f4bb7' />
-    <meta property='twitter:title' content="Yakiyo's Takoyaki" />
-    <meta property='twitter:description' content='Yakiyo. Student, weeb and hobbyist developer' />
-    <meta property='twitter:image' content='https://yakiyo.github.io/main.jpg' />
-    <link rel='icon' type='image/jpg' href='./main.jpg' />
+    <meta property='twitter:title' content="Yakiyo" />
+    <meta property='twitter:description' content='Student/Developer' />
+    <meta property='twitter:image' content='https://yakiyo.github.io/favicon.png' />
+    <link rel='icon' type='image/png' href='./favicon.png' />
 </head>
 
-<body>
-    <header>
-        <a href="#" class="logo">Yakiyo</a>
-        <!-- <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-        </nav> -->
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="logo">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Yakiyo</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Im a self taught developer, currently a CSE student in IUT, Bangladesh. Im interested in 
-                backend development and building tools that help in day to day work. All my projects are
-                available on github. If you like them, please leave a star. Hope you have a wonderful day!
-                I enjoy watching anime, reading mangas and light novels. 
-            </p>
-            <div class="social-icons">
-                <a href="https://github.com/Yakiyo"><i class="fa-brands fa-github"></i></a>
-                <a href="https://discord.bio/yakiyo"><i class="fa-brands fa-discord"></i></a>
+<body class="bg-[#a5b4fc]">
+    <!-- making content of entire page centered -->
+    <div class="flex justify-center flex-col items-center mx-10 sm:mx-30 mt-10">
+        <!-- First two items -->
+        <div class="flex flex-col sm:flex-row w-[100%] justify-evenly items-center pb-10">
+            <!-- Avatar section -->
+            <div class="w-72 h-72">
+                <!-- credits to the image -->
+                <a href="https://www.peakpx.com/en/hd-wallpaper-desktop-kwttz">
+                    <img src="favicon.png" alt="avatar" class="rounded-md w-72 h-72 object-cover">
+                </a>
             </div>
-            <!-- <a href="#" class="btn">Hire me</a> -->
+            <!-- Description section -->
+            <div class="flex flex-col justify-evenly items-start sm:w-[50%] h-[100%] py-5">
+                <p class="text-5xl py-2">Yakiyo</p>
+                <p class="font-mono text-2xl py-2">Student/Developer</p>
+                <p class="font-extralight text-lg py-2">
+                    Hey there! I am Yakiyo. My real name is Rayat Bin Nasir. I'm currently an
+                    undergraduate
+                    student studying <a class="underline" target="_blank" href="https://cse.iutoic-dhaka.edu/">CSE in
+                        IUT</a>. <br>
+                    I am a self taught developer and am passionate about programming. I'm always excited exploring
+                    different fields related to programming and software development in general. Hoping to pursue a
+                    career in software
+                    development in the future.
+                </p>
+            </div>
         </div>
-    </section>
+
+        <!-- Second two items -->
+        <div class="flex flex-col sm:flex-row w-[100%] justify-evenly items-start sm:px-28">
+            <!-- Skills section -->
+            <div class="flex flex-col justify-start items-start sm:w-[50%] h-[100%]">
+                <p class="text-3xl py-2">Skills</p>
+
+                <ul class="list-disc list-outside">
+                    <li class="font-extralight text-lg py-2">Frontend frameworks like Svelte, React</li>
+                    <li class="font-extralight text-lg py-2">Backend dev with Node.js, Deno, Go, Python</li>
+                    <li class="font-extralight text-lg py-2">Android & Dekstop app dev with Flutter</li>
+                    <li class="font-extralight text-lg py-2">Javascript/Typescript, Rust, Go, Dart, Python & a bit of
+                        C, C++, Lua</li>
+                    <li class="font-extralight text-lg py-2">MongoDB and SQLite database</li>
+                    <li class="font-extralight text-lg py-2">Git & Github</li>
+                </ul>
+            </div>
+            <!-- Socials section -->
+            <div class="flex flex-col justify-start items-start pt-3 sm:pt-0 sm:w-[50%] h-[100%]">
+                <p class="text-3xl py-2">Socials</p>
+                <p class="font-extralight text-lg py-2">
+                    You can find me at the following platforms:
+                </p>
+                <!-- Social icons -->
+                <div class="flex flex-row pt-3">
+                    <a target="_blank" href="https://github.com/Yakiyo"
+                        class="text-3xl pl-2 pr-5 transition ease-in-out hover:scale-125"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://discord.bio/yakiyo"
+                        class="text-3xl pr-5 transition ease-in-out hover:scale-125"><i
+                            class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <p class="text-white font-extralight p-2">Website developed by <a class="underline"
+                    href="https://github.com/Yakiyo">Yakiyo</a>.
+                <a href="https://github.com/Yakiyo/Yakiyo.github.io" class="underline">Source Code</a>
+            </p>
+        </footer>
 </body>
 
 </html>
