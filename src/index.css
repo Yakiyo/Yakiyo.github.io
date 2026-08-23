@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --font-sans: 'Instrument Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+:root {
+  --background: #f5f4f0;
+  --foreground: #141412;
+  --card: #eeecea;
+  --card-foreground: #141412;
+  --primary: #141412;
+  --primary-foreground: #f5f4f0;
+  --muted: #dddbd6;
+  --muted-foreground: #6b6a65;
+  --accent: #d4562a;
+  --border: #c8c6c0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
